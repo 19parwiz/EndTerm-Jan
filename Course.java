@@ -1,4 +1,4 @@
-// Factory Method для создания курсов
 public interface Course {
+    void registerStudent();
     String getName();
 }

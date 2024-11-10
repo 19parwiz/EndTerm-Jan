@@ -53,6 +53,7 @@ public class Database {
                 String email = resultSet.getString("email");
                 Course course;
 
+                // Check course type to assign the correct course object
                 if (courseName.equals("Programming Course")) {
                     course = new ProgrammingCourse();
                 } else {

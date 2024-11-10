@@ -1,11 +1,15 @@
-public class ProgrammingCourseCopy implements Course, Cloneable {
+// ProgrammingCourseCopy.java
+
+public class ProgrammingCourseCopy implements Course {
+
     @Override
-    public String getName() {
-        return "Programming Course Copy";
+    public void registerStudent() {
+        System.out.println("Registering student in Programming Course Copy.");
+        // Additional logic for registering a student in the Programming Course Copy
     }
 
     @Override
-    public ProgrammingCourseCopy clone() throws CloneNotSupportedException {
-        return (ProgrammingCourseCopy) super.clone();
+    public String getName() {
+        return "Programming Course Copy";
     }
 }
